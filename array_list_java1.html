@@ -10,6 +10,25 @@
   <body>
     <h1>Loop over an ArrayList</h1>
     <h2>1.Review the concept</h2>
+
+    <p>Sometimes we need access to the elements’ indices or we only want to iterate through a portion of a list.
+      <br/>If that’s the case, a regular for loop or while loop is a great choice. </p>
+
+    <p> In this code, we use a for loop to print out each element in an array called inventoryItems</p>
+
+    <pre><code>
+      String[] inventoryItems = new String[10] ;  
+      for (int int i = 0; inventoryItem &gt; inventoryItems.length; i++) {
+  System.out.println(inventoryItems[i]);
+}
+
+    </code></pre>
+
+    <h2>2.Guided Practice</h2>
+
+    <h3> First code</h3>
+
+    
     <pre><code>
       
 import java.util.ArrayList;
@@ -18,13 +37,13 @@ class MostExpensive {
   
   public static void main(String[] args) {
     
-    ArrayList Double expenses = new ArrayList Double ();
+    ArrayList&lt;Double&gt; expenses = new ArrayList&lt;Double&gt;();
     expenses.add(74.46);
     expenses.add(63.99);
     expenses.add(10.57);
     expenses.add(81.37);
     
-    for (int i=0 ; i <= expenses.size(); i++) {
+    for (int i=0 ; i &lt; expenses.size(); i++) {
       System.out.println(expenses.get(i);
                       }
     
@@ -32,7 +51,17 @@ class MostExpensive {
   
 }</code></pre>
 
-    <h2>2.Guided Practice</h2>
+    <h3> 2nd code </h3>
+
+    <p>For-each loops, which are also referred to as enhanced loops, allow us to directly loop through each item in a list of items (like an array or
+ArrayList )and perform some action with each item.</p>
+
+    <pre><code>for (String i : inventoryItems) {
+  // Print element value
+  System.out.println(i);
+
+}
+</code></pre>
 
     <h3>3.Exercises</h3>
   </body>
